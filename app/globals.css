@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Vaimek';
+  src: url('../fonts/Vaimek-Regular.woff2') format('woff2'),
+      url('../fonts/Vaimek-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+.Vaimek {
+  font-family: 'Vaimek', sans-serif;
+}
+
+.cozy {
+  background-image: url("../app/assets/cardigan1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+}
+
+.grain {
+  background-image: url("../app/assets/nnnoise.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
