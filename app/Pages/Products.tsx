@@ -89,11 +89,21 @@ export default function Products() {
   return (
     <div className="min-h-screen mb-5">
       <FeaturedProducts />
-      <div className="px-56 mt-5">
-        <div className="flex justify-between w-[80%] mx-auto items-center">
-          <p className="text-xs">Showing 1 to 10 products out of 10 products</p>
-          <button className="text-xs capitalize  w-1/4 pt-2 pb-1 border-b-2 active:bg-[#f7f7f7] transition-colors duration-200 ease-in-out">
-            <div className="flex justify-between px-2 items-center ">
+      <div className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 mt-5">
+        <div className="flex flex-col justify-center w-full">
+          <h2 className="Vaimek text-4xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">
+            Unisex Sweaters and Cardigans
+          </h2>
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+            Browse
+          </p>
+        </div>
+        <div className="flex justify-between w-full mx-auto items-center">
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
+            Showing 1 to 10 products out of 10 products
+          </p>
+          <button className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl capitalize w-1/4 pt-2 pb-1 border-b-2 active:bg-[#f7f7f7] transition-colors duration-200 ease-in-out">
+            <div className="flex justify-between px-2 items-center">
               <p>Sort by</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -108,8 +118,8 @@ export default function Products() {
           </button>
         </div>
       </div>
-      <div className="flex flex-col justify-center w-full ">
-        <div className="flex gap-2 mt-5 flex-wrap w-fit  items-center m-auto pl-12">
+      <div className="flex flex-col justify-center w-full">
+        <div className="flex flex-wrap gap-2 mt-5 w-fit items-center m-auto pl-2.5 sm:pl-6 md:pl-8 lg:pl-12 xl:pl-16">
           {FinalItems.map((item) => (
             <ProductCard
               key={item.id}
