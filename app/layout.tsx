@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 const mont = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "SnugNest",
+  title: "SnugNest - Find Your Comfort",
   description: "SnugNest is a place to find your true cardigan.",
   authors: [{ name: "Grenish Rai" }],
 };
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <link rel="icon" href="./SnugNest.png" />
+      <link rel="icon" href="./SnugNest.svg" />
       <body className={mont.className}>
         <Providers>{children}</Providers>
       </body>
