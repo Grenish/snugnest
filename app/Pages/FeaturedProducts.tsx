@@ -31,10 +31,10 @@ export default function FeaturedProducts() {
 
   return (
     <div className="flex flex-col items-center justify-center bg-[#f7f7f7] py-5">
-      <div className="mb-5">
+      <div className="mb-5 px-10 sm:px-4">
         <h2 className="Vaimek text-5xl">Our Latest Collection</h2>
       </div>
-      <div className="w-full flex justify-center gap-4">
+      <div className="w-full flex flex-wrap justify-center gap-4">
         {featuredItems.map((item) => (
           <ProductCard
             key={item.id}
