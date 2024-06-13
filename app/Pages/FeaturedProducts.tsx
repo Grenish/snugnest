@@ -1,19 +1,20 @@
 "use client";
 
 // Importing necessary assets and components
-import { Cardigan3, Cardigan4, HNM1 } from "../../public";
 import ProductCard from "./components/ProductCard";
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 // Main component for Featured Products
 export default function FeaturedProducts() {
+
+  
   // Array of featured items with their details
   const featuredItems = [
     {
       id: 1,
       name: "CaraLes Neo Tree Cardigan",
-      image: Cardigan3,
+      image: "https://ipfs.filebase.io/ipfs/QmNiHmv1Hk57ywY6Xit5CRMJc8BCSG1Rvt2mszEEPxn8N8",
       isEco: true,
       price: 5.98,
       rating: 4.5,
@@ -21,7 +22,7 @@ export default function FeaturedProducts() {
     {
       id: 2,
       name: "Samantha Alvio Lined Sweater",
-      image: Cardigan4,
+      image: "https://ipfs.filebase.io/ipfs/QmdE3fheNdJRQwonWtMb9nZ5DaGaENic1aL4aw3pJBR4Te",
       isEco: true,
       price: 6.59,
       rating: 4.5,
@@ -29,7 +30,7 @@ export default function FeaturedProducts() {
     {
       id: 3,
       name: "Linked seam-detail jumper",
-      image: HNM1,
+      image: "https://ipfs.filebase.io/ipfs/QmNiHmv1Hk57ywY6Xit5CRMJc8BCSG1Rvt2mszEEPxn8N8",
       isEco: true,
       price: 8.38,
       rating: 4,
@@ -37,7 +38,7 @@ export default function FeaturedProducts() {
     {
       id: 4,
       name: "Linked seam-detail jumper",
-      image: HNM1,
+      image: "https://ipfs.filebase.io/ipfs/QmVsS4SJ7BAeNhb7qdxjjX7zSEoY3wQWHs7LR7skRXF7Zx",
       isEco: true,
       price: 8.38,
       rating: 4,

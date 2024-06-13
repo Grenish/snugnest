@@ -1,6 +1,5 @@
 "use client";
 
-import { Cardigan3, Cardigan4, HNM1 } from "../../public";
 import FeaturedProducts from "./FeaturedProducts";
 import ProductCard from "./components/ProductCard";
 import { motion } from "framer-motion";
@@ -11,7 +10,7 @@ export default function Products() {
     {
       id: 1,
       name: "CaraLes Neo Tree Cardigan",
-      image: Cardigan3,
+      image: "https://ipfs.filebase.io/ipfs/QmNiHmv1Hk57ywY6Xit5CRMJc8BCSG1Rvt2mszEEPxn8N8",
       isEco: true,
       price: 5.98,
       rating: 4.5,
@@ -19,7 +18,7 @@ export default function Products() {
     {
       id: 2,
       name: "Samantha Alvio Lined Sweater",
-      image: Cardigan4,
+      image: "https://ipfs.filebase.io/ipfs/QmdE3fheNdJRQwonWtMb9nZ5DaGaENic1aL4aw3pJBR4Te",
       isEco: true,
       price: 6.59,
       rating: 4.5,
@@ -27,7 +26,7 @@ export default function Products() {
     {
       id: 3,
       name: "H&M Knit Cardigan",
-      image: HNM1,
+      image: "https://ipfs.filebase.io/ipfs/QmNiHmv1Hk57ywY6Xit5CRMJc8BCSG1Rvt2mszEEPxn8N8",
       isEco: false,
       price: 7.99,
       rating: 4.5,
@@ -35,7 +34,7 @@ export default function Products() {
     {
       id: 4,
       name: "CaraLes Neo Tree Cardigan",
-      image: Cardigan3,
+      image: "https://ipfs.filebase.io/ipfs/QmVsS4SJ7BAeNhb7qdxjjX7zSEoY3wQWHs7LR7skRXF7Zx",
       isEco: true,
       price: 5.98,
       rating: 4.5,
@@ -43,7 +42,7 @@ export default function Products() {
     {
       id: 5,
       name: "Samantha Alvio Lined Sweater",
-      image: Cardigan4,
+      image: "https://ipfs.filebase.io/ipfs/QmdE3fheNdJRQwonWtMb9nZ5DaGaENic1aL4aw3pJBR4Te",
       isEco: true,
       price: 6.59,
       rating: 4.5,
@@ -51,7 +50,7 @@ export default function Products() {
     {
       id: 6,
       name: "H&M Knit Cardigan",
-      image: HNM1,
+      image: "https://ipfs.filebase.io/ipfs/QmVsS4SJ7BAeNhb7qdxjjX7zSEoY3wQWHs7LR7skRXF7Zx",
       isEco: false,
       price: 7.99,
       rating: 4.5,
@@ -59,7 +58,7 @@ export default function Products() {
     {
       id: 7,
       name: "CaraLes Neo Tree Cardigan",
-      image: Cardigan3,
+      image: "https://ipfs.filebase.io/ipfs/QmNiHmv1Hk57ywY6Xit5CRMJc8BCSG1Rvt2mszEEPxn8N8",
       isEco: true,
       price: 5.98,
       rating: 4.5,
@@ -67,7 +66,7 @@ export default function Products() {
     {
       id: 8,
       name: "Samantha Alvio Lined Sweater",
-      image: Cardigan4,
+      image: "https://ipfs.filebase.io/ipfs/QmdE3fheNdJRQwonWtMb9nZ5DaGaENic1aL4aw3pJBR4Te",
       isEco: true,
       price: 6.59,
       rating: 4.5,
@@ -75,7 +74,7 @@ export default function Products() {
     {
       id: 9,
       name: "H&M Knit Cardigan",
-      image: HNM1,
+      image: "https://ipfs.filebase.io/ipfs/QmVsS4SJ7BAeNhb7qdxjjX7zSEoY3wQWHs7LR7skRXF7Zx",
       isEco: false,
       price: 7.99,
       rating: 4.5,
@@ -83,7 +82,7 @@ export default function Products() {
     {
       id: 10,
       name: "CaraLes Neo Tree Cardigan",
-      image: Cardigan3,
+      image: "https://ipfs.filebase.io/ipfs/QmNiHmv1Hk57ywY6Xit5CRMJc8BCSG1Rvt2mszEEPxn8N8",
       isEco: true,
       price: 5.98,
       rating: 4.5,
