@@ -17,7 +17,7 @@
 }
 
 .cozy {
-  background-image: url("../app/assets/cardigan1.jpg");
+  background-image: url("/cardigan1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -25,7 +25,7 @@
 }
 
 .grain {
-  background-image: url("../app/assets/nnnoise.svg");
+  background-image: url("/nnnoise.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

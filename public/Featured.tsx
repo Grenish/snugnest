@@ -1,4 +1,4 @@
-import { Cardigan3, Cardigan2 } from "../../public";
+import { Cardigan3 } from "../../public";
 import Navbar from "./Navbar";
 import { Image } from "@nextui-org/react";
 
@@ -22,8 +22,8 @@ export default function Featured() {
           </button>
         </div>
         <Image
-          src={Cardigan2.src}
-          className="w-[650px] lg:w-[400px] h-[600px] lg:h-[500px] object-cover pointer-events-none mb-5 sm:mb-0"
+          src={Cardigan3.src}
+          className="w-[650px] lg:w-full h-[600px] lg:h-[500px] object-cover pointer-events-none mb-5 sm:mb-0"
         />
       </div>
     </div>

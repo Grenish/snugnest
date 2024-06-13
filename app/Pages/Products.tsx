@@ -1,6 +1,6 @@
 "use client";
 
-import { Cardigan3, Cardigan4, HNM1 } from "../assets";
+import { Cardigan3, Cardigan4, HNM1 } from "../../public";
 import FeaturedProducts from "./FeaturedProducts";
 import ProductCard from "./components/ProductCard";
 import { motion } from "framer-motion";

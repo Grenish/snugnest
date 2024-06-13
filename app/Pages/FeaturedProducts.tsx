@@ -1,7 +1,7 @@
 "use client";
 
 // Importing necessary assets and components
-import { Cardigan3, Cardigan4, HNM1 } from "../assets";
+import { Cardigan3, Cardigan4, HNM1 } from "../../public";
 import ProductCard from "./components/ProductCard";
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
