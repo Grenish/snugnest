@@ -16,7 +16,7 @@ export default function Hero() {
         <div className="absolute grain w-full h-screen z-[0] bg-gray-900 opacity-50"></div>
         <div className="text-center z-[1] flex flex-col items-center justify-center px-4">
           <motion.h1
-            className="text-6xl font-bold Vaimek text-white sm:text-7xl md:text-8xl lg:text-9xl xl:text-8xl 2xl:text-[12vw]"
+            className="text-7xl font-bold Vaimek text-white sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl 2xl:text-8xl"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
@@ -24,7 +24,7 @@ export default function Hero() {
             SnugNest
           </motion.h1>
           <motion.p
-            className="text-lg text-white sm:text-xl md:text-2xl lg:text-3xl xl:text-sm 2xl:text-sm"
+            className="text-lg text-white sm:text-xl md:text-xl lg:text-sm xl:text-sm 2xl:text-sm"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1 }}
@@ -35,7 +35,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 2 }}
-            className="text-white mt-6 sm:mt-8 md:mt-10 lg:mt-12 xl:mt-5 2xl:mt-5 animate-bounce"
+            className="text-white mt-6 sm:mt-8 md:mt-10 lg:mt-5 xl:mt-5 2xl:mt-5 animate-bounce"
             onClick={handleScroll}
           >
             <svg
@@ -44,7 +44,7 @@ export default function Hero() {
               height="12"
               fill="currentColor"
               viewBox="0 0 256 256"
-              className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-6 xl:h-6 2xl:w-6 2xl:h-6"
+              className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-6 lg:h-6 xl:w-6 xl:h-6 2xl:w-6 2xl:h-6"
             >
               <path d="M205.66,149.66l-72,72a8,8,0,0,1-11.32,0l-72-72a8,8,0,0,1,11.32-11.32L120,196.69V40a8,8,0,0,1,16,0V196.69l58.34-58.35a8,8,0,0,1,11.32,11.32Z"></path>
             </svg>
