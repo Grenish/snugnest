@@ -21,7 +21,7 @@ export default function Featured() {
           </button>
         </div>
         <Image
-          src="/Cardigan2.jpg"
+          src="https://ipfs.filebase.io/ipfs/QmcToifmSHqGBnCKRWKJ72MWNrEaJ2X4d44wZHPss9LNoR"
           className="w-[650px] lg:w-[400px] h-[600px] lg:h-[500px] object-cover pointer-events-none mb-5 sm:mb-0"
         />
       </div>
