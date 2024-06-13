@@ -1,6 +1,10 @@
+"use client";
+
 import { Cardigan3, Cardigan4, HNM1 } from "../assets";
 import FeaturedProducts from "./FeaturedProducts";
 import ProductCard from "./components/ProductCard";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 export default function Products() {
   const FinalItems = [
@@ -89,20 +93,23 @@ export default function Products() {
   return (
     <div className="min-h-screen mb-5">
       <FeaturedProducts />
-      <div className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 mt-5">
+      <div className="px-4 sm:px-6 md:px-8 lg:px-20 xl:px-16 mt-5">
         <div className="flex flex-col justify-center w-full">
-          <h2 className="Vaimek text-4xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">
+          <h2 className="Vaimek text-4xl md:text-5xl xl:text-6xl">
             Unisex Sweaters and Cardigans
           </h2>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
-            Browse
+          <p className="text-xs md:text-xs xl:text-md mb-5 w-full md:w-1/2 sm:w-1/2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque hic
+            vero qui, eius aut nobis? Dicta fugit voluptas atque ad commodi
+            vitae in repudiandae voluptatem illum, vel id! Modi harum
+            accusantium accusamus.
           </p>
         </div>
         <div className="flex justify-between w-full mx-auto items-center">
-          <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
+          <p className="text-xs md:text-xs xl:text-md">
             Showing 1 to 10 products out of 10 products
           </p>
-          <button className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl capitalize w-1/4 pt-2 pb-1 border-b-2 active:bg-[#f7f7f7] transition-colors duration-200 ease-in-out">
+          <button className="text-xs md:text-xs xl:text-md capitalize w-1/4 pt-2 pb-1 border-b-2 active:bg-[#f7f7f7] transition-colors duration-200 ease-in-out">
             <div className="flex justify-between px-2 items-center">
               <p>Sort by</p>
               <svg
@@ -119,17 +126,31 @@ export default function Products() {
         </div>
       </div>
       <div className="flex flex-col justify-center w-full">
-        <div className="flex flex-wrap gap-2 mt-5 w-fit items-center m-auto pl-2.5 sm:pl-6 md:pl-8 lg:pl-12 xl:pl-16">
-          {FinalItems.map((item) => (
-            <ProductCard
-              key={item.id}
-              isEco={item.isEco}
-              title={item.name}
-              image={item.image}
-              price={item.price}
-              rating={item.rating}
-            />
-          ))}
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 mt-5 w-fit items-center m-auto">
+          {FinalItems.map((item, index) => {
+            const { ref, inView } = useInView({
+              triggerOnce: true,
+              threshold: 0.1,
+            });
+
+            return (
+              <motion.div
+                ref={ref}
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
+                transition={{ delay: index * 0.1 }}
+                key={item.id}
+              >
+                <ProductCard
+                  isEco={item.isEco}
+                  title={item.name}
+                  image={item.image}
+                  price={item.price}
+                  rating={item.rating}
+                />
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </div>
