@@ -25,7 +25,7 @@ export default function FAQ() {
         >
           Absolutely! We have a hassle-free return and exchange policy. If
           you’re not completely satisfied with your purchase, you can return or
-          exchange it within 30 days of receipt. Please visit our returns page
+          exchange it within 7 days of receipt. Please visit our returns page
           for more information.
         </AccordionItem>
         <AccordionItem
